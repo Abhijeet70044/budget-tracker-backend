@@ -1,1 +1,1 @@
-web: gunicorn budget_tracker.wsgi --log-file -
+web: gunicorn budget_tracker.wsgi:application --bind 0.0.0.0:$PORT
